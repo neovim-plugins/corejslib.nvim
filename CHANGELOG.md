@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.1.13 (2026-05-18)
+
+**Other changes:**
+
+- chore(metadata): update package metadata (● [f5a2ffe](https://github.com/neovim-plugins/softvisio.nvim/commit/f5a2ffe); 👬 zdm)
+
+Compare with the previous release: [v1.1.12...v1.1.13](https://github.com/neovim-plugins/softvisio.nvim/compare/v1.1.12...v1.1.13)
+
 ### v1.1.12 (2026-05-14)
 
 **Other changes:**
