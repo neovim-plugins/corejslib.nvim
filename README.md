@@ -1,21 +1,21 @@
-# `softvisio.nvim`
+# `corejslib.nvim`
 
-`@softvisio/cli` LSP server integration for `Neovim`.
+`@corejslib/cli` LSP server integration for `Neovim`.
 
 ## Requirements
 
-1. `@softvisio/cli` `npm` package, installed globally.
+1. `@corejslib/cli` `npm` package, installed globally.
 
-Add registry for `@softvisio` namespace to your `.npmrc`:
+Add registry for `@corejslib` namespace to your `.npmrc`:
 
 ```
-@softvisio:registry = https://npm.pkg.github.com/
+@corejslib:registry = https://npm.pkg.github.com/
 ```
 
-Install `@softvisio/cli`:
+Install `@corejslib/cli`:
 
 ```sh
-npm install --global @softvisio/cli
+npm install --global @corejslib/cli
 ```
 
 ## Setup
@@ -23,7 +23,7 @@ npm install --global @softvisio/cli
 ```lua
 return {
     {
-        "neovim-plugins/softvisio.nvim",
+        "neovim-plugins/corejslib.nvim",
         tag = "latest",
         dependencies = {
             "nvim-telescope/telescope.nvim",
@@ -56,7 +56,7 @@ return {
             },
         },
         config = function ()
-            require( "softvisio" ).setup( {
+            require( "corejslib" ).setup( {
                 hostname = "127.0.0.1",
                 port = 55556,
                 auto_attach = false,

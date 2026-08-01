@@ -1,6 +1,6 @@
-local client = require( "softvisio/client" )
-local config = require( "softvisio/config" )
-local utils = require( "softvisio/utils" )
+local client = require( "corejslib/client" )
+local config = require( "corejslib/config" )
+local utils = require( "corejslib/utils" )
 local types = {
     javascript = "text/javascript",
     typescript = "application/x-typescript",
@@ -59,7 +59,7 @@ M = {
 
         utils.echo( action .. ":  ..." )
 
-        local res = do_request( bufnr, "softvisio/lint-file", {
+        local res = do_request( bufnr, "corejslib/lint-file", {
             action = action,
             cwd = vim.fn.getcwd(),
             path = vim.fn.expand( "%:p" ),
@@ -130,7 +130,7 @@ M = {
             return
         end
 
-        do_request( bufnr, "softvisio/open-browser", {
+        do_request( bufnr, "corejslib/open-browser", {
             data = buffer,
             encoding = vim.o.encoding,
             font = vim.g.gfn,

@@ -1,5 +1,5 @@
-local api = require( "softvisio/api" )
-local utils = require( "softvisio/utils" )
+local api = require( "corejslib/api" )
+local utils = require( "corejslib/utils" )
 local M
 
 local function execute ( input )
@@ -29,7 +29,7 @@ M = {
         vim.api.nvim_create_user_command( "S", execute, {
             nargs = "*",
             complete = complete,
-            desc = "Softvisio LSP",
+            desc = "Corejslib LSP",
         } )
     end,
 }

@@ -4,16 +4,16 @@ vim.o.showmode = false
 
 M = {
     setup = function ( options )
-        require( "softvisio/config" ).setup( options )
+        require( "corejslib/config" ).setup( options )
 
-        require( "softvisio/commands" ).setup()
+        require( "corejslib/commands" ).setup()
 
-        require( "softvisio/client" ).setup()
+        require( "corejslib/client" ).setup()
     end,
 }
 
 return setmetatable( M, {
     __index = function( _, k )
-        return require( "softvisio.api" )[ k ]
+        return require( "corejslib.api" )[ k ]
     end,
 } )

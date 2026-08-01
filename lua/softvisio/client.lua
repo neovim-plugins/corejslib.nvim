@@ -1,5 +1,5 @@
-local config = require( "softvisio/config" )
-local utils = require( "softvisio/utils" )
+local config = require( "corejslib/config" )
+local utils = require( "corejslib/utils" )
 local client
 local M
 
@@ -20,7 +20,7 @@ local function test_rpc ()
 end
 
 local function spawn_Server ()
-    local cmd = vim.fn.has( "win32" ) == 1 and "scli.cmd" or "scli"
+    local cmd = vim.fn.has( "win32" ) == 1 and "ccli.cmd" or "ccli"
 
     server = vim.fn.jobstart( cmd .. " lsp start", {
         detach = false,
@@ -31,8 +31,8 @@ M = {
     setup = function ()
         if config.auto_attach then
             vim.api.nvim_create_autocmd( { "BufFilePost", "BufRead", "BufNewFile", "BufWritePost" }, {
-                -- group = "softvisio",
-                desc = "softvisio: attach",
+                -- group = "corejslib",
+                desc = "corejslib: attach",
                 callback = function ( args )
                     local bufnr = args.buf
 
@@ -47,7 +47,7 @@ M = {
         if not client then
             if test_rpc() then
                 client = vim.lsp.get_client_by_id( vim.lsp.start( {
-                    name = "softvisio",
+                    name = "corejslib",
                     cmd = vim.lsp.rpc.connect( config.hostname, config.port ),
                     on_error = function ( code, e )
                         if e == "ECONNRESET" then
