@@ -1,6 +1,6 @@
 {
     "name": "@neovim-plugins/corejslib.nvim",
-    "version": "1.1.13",
+    "version": "1.1.14",
     "private": true,
     "description": "@corejslib/cli LSP Neovim integration",
     "homepage": "https://github.com/neovim-plugins/corejslib.nvim?tab=readme-ov-file#readme",

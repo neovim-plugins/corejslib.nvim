@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.1.14 (2026-08-01)
+
+**Other changes:**
+
+- chore: rename softvisio to corejslib (● [7206ad5](https://github.com/neovim-plugins/corejslib.nvim/commit/7206ad5); 👬 zdm)
+
+Compare with the previous release: [v1.1.13...v1.1.14](https://github.com/neovim-plugins/corejslib.nvim/compare/v1.1.13...v1.1.14)
+
 ### v1.1.13 (2026-05-18)
 
 **Other changes:**
