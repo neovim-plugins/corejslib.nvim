@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.2.1 (2026-08-02)
+
+**Bug fixes:**
+
+- \[PATCH] fix: change rpc namespace to ccli (● [280278e](https://github.com/neovim-plugins/ccli.nvim/commit/280278e); 👬 zdm)
+
+Compare with the previous release: [v1.2.0...v1.2.1](https://github.com/neovim-plugins/ccli.nvim/compare/v1.2.0...v1.2.1)
+
 ### v1.2.0 (2026-08-02)
 
 **New features:**
