@@ -1,5 +1,17 @@
 # Changelog
 
+### v1.2.0 (2026-08-02)
+
+**New features:**
+
+- \[MINOR] feat: rename package to ccli.nvim (● [c1e70c3](https://github.com/neovim-plugins/ccli.nvim/commit/c1e70c3); 👬 zdm)
+
+**Other changes:**
+
+- docs: update (● [7a3fe69](https://github.com/neovim-plugins/ccli.nvim/commit/7a3fe69); 👬 zdm)
+
+Compare with the previous release: [v1.1.14...v1.2.0](https://github.com/neovim-plugins/ccli.nvim/compare/v1.1.14...v1.2.0)
+
 ### v1.1.14 (2026-08-01)
 
 **Other changes:**
