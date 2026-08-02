@@ -1,16 +1,16 @@
 {
-    "name": "@neovim-plugins/corejslib.nvim",
+    "name": "@neovim-plugins/ccli.nvim",
     "version": "1.1.14",
     "private": true,
-    "description": "@corejslib/cli LSP Neovim integration",
-    "homepage": "https://github.com/neovim-plugins/corejslib.nvim?tab=readme-ov-file#readme",
+    "description": "Neovim @corejslib/cli LSP integration",
+    "homepage": "https://github.com/neovim-plugins/ccli.nvim?tab=readme-ov-file#readme",
     "bugs": {
-        "url": "https://github.com/neovim-plugins/corejslib.nvim/issues",
+        "url": "https://github.com/neovim-plugins/ccli.nvim/issues",
         "email": "root <root@softvisio.net>"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/neovim-plugins/corejslib.nvim.git"
+        "url": "git+https://github.com/neovim-plugins/ccli.nvim.git"
     },
     "license": "Proprietary Software",
     "author": "root <root@softvisio.net>"

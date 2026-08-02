@@ -1,4 +1,4 @@
-# `corejslib.nvim`
+# `ccli.nvim`
 
 `@corejslib/cli` LSP server integration for `Neovim`.
 
@@ -23,7 +23,7 @@ npm install --global @corejslib/cli
 ```lua
 return {
     {
-        "neovim-plugins/corejslib.nvim",
+        "neovim-plugins/ccli.nvim",
         tag = "latest",
         dependencies = {
             "nvim-telescope/telescope.nvim",
@@ -56,7 +56,7 @@ return {
             },
         },
         config = function ()
-            require( "corejslib" ).setup( {
+            require( "ccli" ).setup( {
                 hostname = "127.0.0.1",
                 port = 55556,
                 auto_attach = false,

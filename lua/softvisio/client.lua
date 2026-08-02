@@ -1,5 +1,5 @@
-local config = require( "corejslib/config" )
-local utils = require( "corejslib/utils" )
+local config = require( "ccli/config" )
+local utils = require( "ccli/utils" )
 local client
 local M
 
@@ -31,8 +31,8 @@ M = {
     setup = function ()
         if config.auto_attach then
             vim.api.nvim_create_autocmd( { "BufFilePost", "BufRead", "BufNewFile", "BufWritePost" }, {
-                -- group = "corejslib",
-                desc = "corejslib: attach",
+                -- group = "ccli",
+                desc = "ccli: attach",
                 callback = function ( args )
                     local bufnr = args.buf
 
@@ -47,7 +47,7 @@ M = {
         if not client then
             if test_rpc() then
                 client = vim.lsp.get_client_by_id( vim.lsp.start( {
-                    name = "corejslib",
+                    name = "ccli",
                     cmd = vim.lsp.rpc.connect( config.hostname, config.port ),
                     on_error = function ( code, e )
                         if e == "ECONNRESET" then

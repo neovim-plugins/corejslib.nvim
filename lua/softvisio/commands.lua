@@ -1,5 +1,5 @@
-local api = require( "corejslib/api" )
-local utils = require( "corejslib/utils" )
+local api = require( "ccli/api" )
+local utils = require( "ccli/utils" )
 local M
 
 local function execute ( input )
@@ -26,10 +26,10 @@ end
 
 M = {
     setup = function ()
-        vim.api.nvim_create_user_command( "S", execute, {
+        vim.api.nvim_create_user_command( "Ccli", execute, {
             nargs = "*",
             complete = complete,
-            desc = "Corejslib LSP",
+            desc = "ccli LSP",
         } )
     end,
 }
