@@ -1,6 +1,6 @@
-local client = require( "ccli/client" )
-local config = require( "ccli/config" )
-local utils = require( "ccli/utils" )
+local client = require( "zcli/client" )
+local config = require( "zcli/config" )
+local utils = require( "zcli/utils" )
 local types = {
     javascript = "text/javascript",
     typescript = "application/x-typescript",
@@ -59,7 +59,7 @@ M = {
 
         utils.echo( action .. ":  ..." )
 
-        local res = do_request( bufnr, "ccli/lint-file", {
+        local res = do_request( bufnr, "zcli/lint-file", {
             action = action,
             cwd = vim.fn.getcwd(),
             path = vim.fn.expand( "%:p" ),
@@ -130,7 +130,7 @@ M = {
             return
         end
 
-        do_request( bufnr, "ccli/open-browser", {
+        do_request( bufnr, "zcli/open-browser", {
             data = buffer,
             encoding = vim.o.encoding,
             font = vim.g.gfn,

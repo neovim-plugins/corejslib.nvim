@@ -1,5 +1,5 @@
-local api = require( "ccli/api" )
-local utils = require( "ccli/utils" )
+local api = require( "zcli/api" )
+local utils = require( "zcli/utils" )
 local M
 
 local function execute ( input )
@@ -26,10 +26,10 @@ end
 
 M = {
     setup = function ()
-        vim.api.nvim_create_user_command( "Ccli", execute, {
+        vim.api.nvim_create_user_command( "Zcli", execute, {
             nargs = "*",
             complete = complete,
-            desc = "ccli LSP",
+            desc = "zcli LSP",
         } )
     end,
 }

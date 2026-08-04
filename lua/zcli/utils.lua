@@ -55,7 +55,7 @@ M = {
     end,
 
     set_diagnostic = function ( bufnr, diagnostic )
-        local namespace = vim.api.nvim_create_namespace( "ccli" )
+        local namespace = vim.api.nvim_create_namespace( "zcli" )
 
         -- vim.diagnostic.config( options, namespace )
 
@@ -78,7 +78,7 @@ M = {
 
     open_diagnostics = function ()
         if vim.fn.exists( ":Telescope" ) > 0 then
-            local namespace = vim.api.nvim_create_namespace( "ccli" )
+            local namespace = vim.api.nvim_create_namespace( "zcli" )
 
             vim.cmd( "Telescope diagnostics bufnr=0 namespace=" .. namespace );
         end
