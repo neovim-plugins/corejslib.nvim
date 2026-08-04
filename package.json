@@ -2,7 +2,7 @@
     "name": "@neovim-plugins/zcli.nvim",
     "version": "1.2.1",
     "private": true,
-    "description": "Neovim @corejslib/cli LSP integration",
+    "description": "Neovim @corejslib/zcli LSP integration",
     "homepage": "https://github.com/neovim-plugins/zcli.nvim?tab=readme-ov-file#readme",
     "bugs": {
         "url": "https://github.com/neovim-plugins/zcli.nvim/issues",
