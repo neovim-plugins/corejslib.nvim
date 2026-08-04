@@ -1,10 +1,10 @@
 # `zcli.nvim`
 
-`@corejslib/zcli` LSP server integration for `Neovim`.
+`@softvisio/zcli` LSP server integration for `Neovim`.
 
 ## Requirements
 
-1. `@corejslib/zcli` `npm` package, installed globally.
+1. `@softvisio/zcli` `npm` package, installed globally.
 
 Add registry for `@corejslib` namespace to your `.npmrc`:
 
@@ -12,10 +12,10 @@ Add registry for `@corejslib` namespace to your `.npmrc`:
 @corejslib:registry = https://npm.pkg.github.com/
 ```
 
-Install `@corejslib/zcli`:
+Install `@softvisio/zcli`:
 
 ```sh
-npm install --global @corejslib/zcli
+npm install --global @softvisio/zcli
 ```
 
 ## Setup
