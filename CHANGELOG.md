@@ -1,5 +1,17 @@
 # Changelog
 
+### v1.2.2 (2026-08-04)
+
+**Other changes:**
+
+- build: rename package to zcli (● [50f1a6f](https://github.com/neovim-plugins/zcli.nvim/commit/50f1a6f); 👬 zdm)
+
+- chore: rename ccli to zcli (● [28b08e5](https://github.com/neovim-plugins/zcli.nvim/commit/28b08e5), [9cee79f](https://github.com/neovim-plugins/zcli.nvim/commit/9cee79f), [20eab3d](https://github.com/neovim-plugins/zcli.nvim/commit/20eab3d); 👬 zdm)
+
+- chore(metadata): update package metadata (● [dd00dc3](https://github.com/neovim-plugins/zcli.nvim/commit/dd00dc3); 👬 zdm)
+
+Compare with the previous release: [v1.2.1...v1.2.2](https://github.com/neovim-plugins/zcli.nvim/compare/v1.2.1...v1.2.2)
+
 ### v1.2.1 (2026-08-02)
 
 **Bug fixes:**
