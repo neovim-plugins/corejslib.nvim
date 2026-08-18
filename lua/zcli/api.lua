@@ -7,6 +7,7 @@ local types = {
     json = "application/json",
     sh = "application/x-sh",
     ant = "text/xml",
+    markdown = "text/markdown",
 }
 local M
 
