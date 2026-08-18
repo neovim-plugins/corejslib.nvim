@@ -1,5 +1,13 @@
 # Changelog
 
+### v1.3.0 (2026-08-18)
+
+**New features:**
+
+- \[MINOR] feat: add markdown mime type (● [a41354d](https://github.com/neovim-plugins/zcli.nvim/commit/a41354d); 👬 zdm)
+
+Compare with the previous release: [v1.2.2...v1.3.0](https://github.com/neovim-plugins/zcli.nvim/compare/v1.2.2...v1.3.0)
+
 ### v1.2.2 (2026-08-04)
 
 **Other changes:**
